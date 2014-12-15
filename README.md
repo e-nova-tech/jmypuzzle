@@ -1,21 +1,16 @@
 *This is a legacy work. It was initially written in 2007, as an experimental js activity for the French Learning website [http://www.clickonfrench.com]. Then the plugin evolved independently to follow our internal needs, and get a better code structure. However, I thought it would be worth it to take time to test it and make it work with a recent version of jquery, and that's why I publish now an updated version. Hope it can be useful !*
 ```
-                         ____                          ___
-    __  /'\_/°\         /\  _'\                       /\_ \
-   /\_\/\      \  __  __\ \ \L\ \__  __  ____    ____ \//\ \      __   
+                         _____                          ___
+    __  /'\_/'\         /\  _ '\                       /\_ \
+   /\_\/\      \  __  __\ \ \L\ \__  __  ____    ____ \//\ \      __
    \/\ \ \ \__\ \/\ \/\ \\ \ ,__/\ \/\ \/\_ ,'\ /\_ ,'\ \ \ \   /'__'\
     \ \ \ \ \_/\ \ \ \_\ \\ \ \/\ \ \_\ \/_/  /_\/_/  /_ \_\ \_/\  __/ 
     _\ \ \ \_\\ \_\/'____ \\ \_\ \ \____/ /\____\ /\____\/\____\ \____\
    /\ \_\ \/_/ \/_/'/___/> \\/_/  \/___/  \/____/ \/____/\/____/\/____/
-   \ \____/           /\___/                                           
-    \/___/            \/__/                                            
+   \ \____/           /\___/
+    \/___/            \/__/
 ```
 ```
-//////////////////////////////////////////////////////////////////
-/// (\_/)                                                      ///
-/// (O.o) This is Bunny.                                       ///
-/// (> <) Worship Bunny. There is only one, he is our god !    ///
-//////////////////////////////////////////////////////////////////
 ```
 
 JMyPuzzle V-0.2
@@ -31,13 +26,13 @@ Your html code should look like the one below :
 ```html
 <div class="JMyPuzzle">
     <p id="trials"></p>
-        <ul>
-            <li>or not</li>
-            <li>be</li>
-            <li>to</li>
-            <li>question !</li>
-            <li>To</li>
-            <li>be,</li>
+    <ul>
+        <li>or not</li>
+        <li>be</li>
+        <li>to</li>
+        <li>question !</li>
+        <li>To</li>
+        <li>be,</li>
     </ul>
     <input type="button" class="button" id="reset" value="reset" />
     <input type="button" class="button" id="check" value="check" />
@@ -74,13 +69,13 @@ jMyCarousel has a lot of different configuration options :
 ```
 answer: "7,2,1,3,8,5,6,4",			// right answer's order
         
-maxTrials: 3,							// maximum number of trials, 0 for unlimited
+maxTrials: 3,						// maximum number of trials, 0 for unlimited
 classOnValid: 'valid',				// class to apply to the element when valid
-classOnNotValid: 'notValid',			// class to apply to the element when not valid
+classOnNotValid: 'notValid',		// class to apply to the element when not valid
 classOnMiValid: 'miValid',			// class to apply to the element when mi valid
         			
-fnOnCheck: null,						// To call its custom callback function at the end of the check. The function will be provided with the results variables of the exercise.
-        								// example : function(jSonResults){ alert("Your success rate : " + jSonResults.success_rate + "%") }
+fnOnCheck: null,					// To call its custom callback function at the end of the check. The function will be provided with the results variables of the exercise.
+        							// example : function(jSonResults){ alert("Your success rate : " + jSonResults.success_rate + "%") }
         									
 ajaxResultUrl: '',					// Ajax url where to send the results. The results will be sent by post with the following variables :
         									// nb_words : The total number of words
@@ -95,12 +90,10 @@ ajaxResultUrl: '',					// Ajax url where to send the results. The results will b
 fnOnAjax: null,						// custom function to call at the end of the ajax treatment. enables to get the data sent back from the server : example function(data){ alert(data); }
 ```
 
-
 You can have fun playing around with the different options.
 
 
 ### Is it possible to put something else that text or images in the puzzle ?
 
-Yes if you wish so.. Feel free to let us know wether it works properly ! 
-   
+Yes if you wish so. Feel free to let us know wether it works properly ! 
 
